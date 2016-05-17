@@ -1,0 +1,23 @@
+So, about 3 months ago I was on OB rotation and it was the middle of the night and I was thinking about how poor I am and how I dont have any money. I was on r/investing and someone mentioned how their friend was blowing all their money on this new cryptocurrency called Ether... so I looked into it. 
+Ether had gone from pennies to about 6 bucks in the last month or two. I watched it for 2 days and it went up to 8 and I said holy shit and threw 200 bucks at it. Today it's at $12 (although a couple weeks ago it was at $15) so I'm up a moderate amount of money. 
+The more interesting thing is that the poloniex exchange has an api so you can robotically buy and sell, and the trade fees are like 0.15% wehich is pennies per trade -- compared to real stocks which cost at least 5 dollars per trade. 
+So I started reading about technical indicators on stocks and how to calculate them and which ones work best and how I can make day trading crypto currency profitable. I'll put up all the bots I built so you can look at them. Nothing really worked really well. like 50%. The best one was probably the Stochastic Oscillator with a period of 5 minutes. 
+
+Bots:
+  -ConvergingAveragesBot_v1 --> http://www.investopedia.com/terms/m/movingaverage.asp
+  -MACDbot_v0_1 --> http://www.investopedia.com/terms/m/macd.asp ** I think there might actually be a bug in this that I only discovered whil working on the neural network
+  -StochasticOscillatorBot_v0_1 --> http://www.investopedia.com/terms/s/stochasticoscillator.asp
+  -ThreadedStochOscBot_v0_1 --> Same as above only with threading! allows for user input to buy or sell
+  -TestUi_v_2 --> this is an experiment with the StochOsc bot in GUI form. Has a dependency on pyQt which you should download because it's aweosme
+
+After all this I happened across a musing someone had on the internet about using a neural network to predict stock price movements. Why not? I've come this far so I might as well try something new. So I started reading about neural networks and trading. 
+Reading:
+  http://www.comp.nus.edu.sg/~tancl/publications/j1999-2000/Neuro-Yao.pdf
+  https://arxiv.org/ftp/cond-mat/papers/0304/0304469.pdf
+  reddit: /r/algotrading
+Python libraries:
+  pybrain
+  neurolab
+
+And that where we are now. I'm trying to decide which inputs will work best, and what the criteria for success is. Do we want to just know if the price will go up or down? do we want to predict how big the delta will be? I dunno man. Even if this doesn't interest you at all hopefully it made you not bored for at least a couple minutes :)
+  
